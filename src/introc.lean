@@ -3,7 +3,7 @@
 
 ## By Chris Birkbeck 
 
-
+Here is a collection of hard problems to try and solve. Goodluck!
 
 # Challenge 
 
