@@ -12,6 +12,7 @@ levels = [ "src/tutorial/tutorialc.lean",
 
 [[worlds]]
 name = "Collatz"
+parents = [1]
 id = 2
 levels = [ "src/tutorial/collatz.lean",
              ]
