@@ -1,81 +1,11 @@
-name = "The Euclid Game"
-version = "1.0.0"
+name = "CP"
+version = "1.0"
 extra_files = "extras"
-intro = "src/intro.lean"
+intro = "src/introc.lean"
 
-# The following parameter needs to be set for the "View Source" functionality to work
-source_base_url = "https://raw.githubusercontent.com/luisscastillo/lean-game/main/" # Where to find the source files of the game
 
 [[worlds]]
-name = "Tutorial World"
+name = "Goldbach"
 id = 1
-levels = [ 
-
-  "src/tutorial_world/level01_refl.lean",
-  "src/tutorial_world/level02_rw.lean",
-  "src/tutorial_world/level03_rwbis.lean",
-  "src/tutorial_world/level04_exact.lean",
-  "src/tutorial_world/level05_lemma_usage.lean",
-  "src/tutorial_world/level06_intro.lean",
-  "src/tutorial_world/level07_split.lean",
-  "src/tutorial_world/level08_use.lean",
-  "src/tutorial_world/level09_have.lean",
-  "src/tutorial_world/level10_cases1_and.lean",
-  "src/tutorial_world/level11_cases2_or.lean",
-  "src/tutorial_world/level12_cases3_exists.lean",
-  "src/tutorial_world/level13_leftright.lean",
-  "src/tutorial_world/level14_apply.lean",
-  "src/tutorial_world/level15_simp.lean",
-  "src/tutorial_world/level16_exfalso.lean",
-  "src/tutorial_world/level17_by_cases.lean",
-  "src/tutorial_world/level18_by_contra.lean",
-  
-]
-
-[[worlds]]
-name = "Incidence World"
-id = 2
-parents = [1]
-levels = [ 
-
-   "src/incidence_world/level01.lean", 
-   "src/incidence_world/level02.lean", 
-   "src/incidence_world/level03.lean", 
-   "src/incidence_world/level04.lean", 
-   "src/incidence_world/level05.lean", 
-   "src/incidence_world/level06.lean",
-   "src/incidence_world/level07.lean", 
-
-]
-
-[[worlds]]
-name = "Betweenness World"
-id = 3
-parents = [2]
-levels = [ 
-
-     "src/betweenness_world/level01.lean",
-     "src/betweenness_world/level02.lean",
-     "src/betweenness_world/level03.lean",
-     "src/betweenness_world/level04.lean",
-     "src/betweenness_world/level05.lean",
-
-]
-
-[[worlds]]
-name = "Plane Separation World"
-id = 4
-parents = [3]
-levels = [ 
-
-     "src/plane_separation_world/level01.lean",
-     "src/plane_separation_world/level02.lean",
-     "src/plane_separation_world/level03.lean",
-     "src/plane_separation_world/level04.lean",
-     "src/plane_separation_world/level05.lean",
-     "src/plane_separation_world/level06.lean",
-     "src/plane_separation_world/level07.lean",
-     "src/plane_separation_world/level08.lean",
-     "src/plane_separation_world/level09.lean",
-
-]
+levels = [ "src/tutorial/tutorialc.lean",
+             ]
