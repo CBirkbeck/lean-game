@@ -15,8 +15,11 @@ def collatz_iterate (x : ℕ) : ℕ → ℕ
 | 0 := x
 | (n+1) := collatz (collatz_iterate n)
 
-/-- The collatz iterates terminate. -/
-theorem Collatz_Conjecture (x : ℕ) (hx : 0 < x) : ∃ n : ℕ, collatz_iterate x n = 1 :=
+/- Lemma : 
+For every positive integer  $x$, there exits some $n ∈ ℕ$ such that $n$-th collatz iterate 
+of $x$ is $1$.
+-/
+lemma Collatz_Conjecture (x : ℕ) (hx : 0 < x) : ∃ n : ℕ, collatz_iterate x n = 1 :=
 begin
 sorry,
 
