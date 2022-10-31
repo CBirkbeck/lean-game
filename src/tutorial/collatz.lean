@@ -15,8 +15,8 @@ def collatz_iterate (x : ℕ) : ℕ → ℕ
 | 0 := x
 | (n+1) := collatz (collatz_iterate n)
 
-/-- The predicate which says iteration terminates in finite time. -/
-theorem Collatz_Conjecture (x : ℕ) := 0 < x → ∃ n : ℕ, collatz_iterate x n = 1
+/-- The collatz iterates terminate. -/
+theorem Collatz_Conjecture (x : ℕ) (hx : 0 < x) : ∃ n : ℕ, collatz_iterate x n = 1 :=
 begin
 sorry,
 
